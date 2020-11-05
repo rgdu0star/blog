@@ -18,11 +18,11 @@ jobs:
       with:
         key: ${{ secrets.TEXTILE_ACCOUNT_KEY }}
         secret: ${{ secrets.TEXTILE_ACCOUNT_SECRET }}
-        bucket: '<BUCKET_NAME>'
+        bucket: 'vokov'
         thread: 'bafk565xnzb7bxrwju47modtl66zw33kfukja3lfkpe6mdom4rjzw4wy'
-        path: '<DIRECTORY_PATH>'
-        pattern: '<FILE_PATTERN>'
-        remove: '<REMOVE_BUCKET?>'
+        path: '.'
+        pattern: '**/*'
+        remove: 'true'
     # Use the output from the `hello` step
     - run: echo "bucket key: ${{ steps.bucket.outputs.key }}"
     - run: echo "ipfs: ${{ steps.bucket.outputs.ipfs }}"
