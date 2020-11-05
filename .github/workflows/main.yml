@@ -19,7 +19,7 @@ jobs:
         key: ${{ secrets.TEXTILE_ACCOUNT_KEY }}
         secret: ${{ secrets.TEXTILE_ACCOUNT_SECRET }}
         bucket: '<BUCKET_NAME>'
-        thread: '<THREAD_ID>'
+        thread: 'bafk565xnzb7bxrwju47modtl66zw33kfukja3lfkpe6mdom4rjzw4wy'
         path: '<DIRECTORY_PATH>'
         pattern: '<FILE_PATTERN>'
         remove: '<REMOVE_BUCKET?>'
